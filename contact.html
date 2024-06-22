@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreEcoTourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+   background-color: white;  
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+   
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar Styles 
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
+}*/
+
+/* Contact Us Page Styles */
+
+.contact-form {
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button[type="submit"] {
+    background-color: lightgreen;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Additional Information Styles */
+.additional-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.additional-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.dest{
+    display: flex;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+
+.c{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+.c p i{
+            margin-right: 10px;
+        }
+.address {
+    padding: 20px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.address h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.address p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.address p:last-child {
+    margin-bottom: 0;
+}
+
+.address p strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.address .contact-info {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.address .contact-info p {
+    margin-bottom: 10px;
+}
+
+/*header style*/
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+    </style>
+</head>
+<body>
+    <!---<video autoplay loop muted plays-inline class="background-clip">
+        <source src="bg.mp4" type="video/mp4">
+    </video>--->
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <h3 style="font-style: italic;">ExploreEcoTourism</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="activity.html">Activities</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <div class="dest">
+        <!--<div class="sidebar">
+            <h3>Filter</h3>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Values</a></li>
+                <li><a href="#">Meet Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>-->
+        
+
+    <section class="contact-form">
+        <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+        </section>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+        <section class="address">
+            <div class="container">
+                <h2>Our Address</h2>
+                <div class="c">
+                    <!--<p>ExploreEcoTourism Inc.</p>-->
+                    <p><i class="fas fa-map-marker-alt"></i>123 Akagera Avenue</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Green Valley, EcoLand</p>
+                    <!--<p>Zip Code: 12345</p>-->
+                    <p><i class="fas fa-phone"></i>0788949866</p>
+                    <p><i class="fas fa-envelope"></i>info@akagera.com</p>
+                </div>
+            </div>
+        </section>
+        <!--<section class="additional-info">
+        <div class="container">
+            <p>If you prefer to contact us by phone, you can reach our customer service team at <strong>1-800-EXPLORE</strong>.</p>
+            <p>We typically respond to inquiries within 1-2 business days. Thank you for reaching out to ExploreEcoTourism!</p>
+        </div>
+        </section>-->
+    </section>
+    
+    </div>
+
+
+    <footer>
+        
+            <p>&copy; 2024 ExploreEcoTourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>

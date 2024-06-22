@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreEcoTourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+   background-color: white;  
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+/* Destination Styles */
+.destination {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 75px;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.destination h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.destination ul {
+    margin-bottom: 10px;
+}
+
+.destination ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.destination a.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.destination a.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-image.jpg'); /* Replace 'hero-image.jpg' with your actual image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation-duration: 1s;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation-duration: 1s;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* Vibrant button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    animation-duration: 1s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+</head>
+<body>
+    <!---<video autoplay loop muted plays-inline class="background-clip">
+        <source src="bg.mp4" type="video/mp4">
+    </video>--->
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <h3 style="font-style: italic;">ExploreEcoTourism</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="activity.html">Activities</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <div class="dest">
+       
+  
+    <section class="destinations">
+        <div class="container">
+            <div class="destination">
+                <img src="mountain.jpg" alt="Mountain Destination">
+                <h2>Mountain Retreat</h2>
+                <p><strong>Location:</strong> Volcanos, Rwanda</p>
+                <p><strong>Highlights:</strong></p>
+                <ul>
+                    <li>Breathtaking panoramic views</li>
+                    <li>Challenging hiking trails</li>
+                    
+                </ul>
+                <p><strong>Additional Activities:</strong> Mountain biking, rock climbing, fishing</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="destination">
+                <img src="beach.jpg" alt="Beach Destination">
+                <h2>Tropical Paradise</h2>
+                <p><strong>Location:</strong> Kivu Islands</p>
+                <p><strong>Highlights:</strong></p>
+                <ul>
+                    <li>White sandy beaches and crystal-clear waters</li>
+                    <li>Colorful coral reefs for snorkeling</li>
+                    
+                </ul>
+                <p><strong>Additional Activities:</strong> Scuba diving, kayaking, island hopping</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="destination">
+                <img src="forest.jpg" alt="Forest Destination">
+                <h2>Wilderness Adventure</h2>
+                <p><strong>Location:</strong> Akagera Rainforest, Rwanda</p>
+                <p><strong>Highlights:</strong></p>
+                <ul>
+                    <li>Explore the world's largest tropical rainforest</li>
+                </ul>
+                <p><strong>Additional Activities:</strong> Canopy tours, birdwatching, indigenous community visits</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="destination">
+                <img src="desert.jpg" alt="Desert Destination">
+                <h2>Sands of Time</h2>
+                <p><strong>Location:</strong> Sahara Desert, Morocco</p>
+                <p><strong>Highlights:</strong></p>
+                <ul>
+                    <li>Experience the vast expanse of the world's largest hot desert</li>
+                    <li>Sunset camel treks over sand dunes</li>
+                    
+                </ul>
+                <p><strong>Additional Activities:</strong> Quad biking, sandboarding, traditional Berber culture experiences</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="destination">
+                <img src="island.jpg" alt="Island Destination">
+                <h2>Island Paradise</h2>
+                <p><strong>Location:</strong> Seychelles Islands</p>
+                <p><strong>Highlights:</strong></p>
+                <ul>
+                    <li>Idyllic beaches with powdery white sand</li>
+                    <li>Crystal-clear turquoise waters teeming with marine life</li>
+                    
+                </ul>
+                <p><strong>Additional Activities:</strong> Sailing, deep-sea fishing, nature reserves exploration</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="destination">
+                <img src="canyon.jpg" alt="Canyon Destination">
+                <h2>Desert Canyon Adventure</h2>
+                <p><strong>Location:</strong> Grand Canyon, USA</p>
+                <p><strong>Highlights:</strong></p>
+                <ul>
+                    <li>Marvel at the breathtaking natural wonder of the Grand Canyon</li>
+                    <li>Hike along scenic trails with spectacular canyon views</li>
+                    
+                </ul>
+                <p><strong>Additional Activities:</strong> Helicopter tours, mule rides, Native American cultural experiences</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- Add more destinations here -->
+        </div>
+    </section>
+ </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ExploreEcoTourism. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

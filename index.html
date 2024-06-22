@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreEcoTourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+   background-color: rgba(0, 0, 0, 0.4);  Light background color */
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+
+.hero {
+    background-image: url('hero-image.jpg'); /* Replace 'hero-image.jpg' with your actual image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation-duration: 1s;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation-duration: 1s;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* Vibrant button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    animation-duration: 1s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Featured Destinations Section */
+.featured-destinations {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-destinations h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.featured-destinations p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666; 
+}
+
+
+.popular-activities {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-activities h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.popular-activities p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666; 
+}
+
+
+.why-choose-us {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.why-choose-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.why-choose-us ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.why-choose-us ul li {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h3 style="font-style: italic;">ExploreEcoTourism</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!--<li><a href="destination.html">Destinations</a></li>-->
+                    <li><a href="activity.html">Activities</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container1">
+            <h1 class="animated" style="color: lightgreen;">Embark on Unforgettable Eco Adventures!</h1>
+            <p class="animated fadeInUp" style="color: lightgreen;">Discover pristine natural landscapes and immerse yourself in sustainable travel experiences.</p>
+            <a href="destination.html" class="btn animated pulse">Explore Destinations</a>
+        </div>
+    </section>
+    <div class="cont" style="
+            margin-top: 10%;
+            display: flex;
+            ">
+ 
+
+    <section class="featured-destinations">
+        <div class="container3">
+            <h2>Featured Destinations</h2>
+            <p>Discover our top destinations and embark on unforgettable adventures.</p>
+            
+        </div>
+    </section>
+
+    <section class="popular-activities">
+        <div class="container0">
+            <h2>Popular Activities</h2>
+            <p>Explore our most popular activities and experience the thrill of eco-tourism.</p>
+            </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="container1">
+            <h2>Why Choose ExploreEcoTourism?</h2>
+            <p>At ExploreEcoTourism, we are committed to providing exceptional travel experiences that are not only enjoyable but also sustainable. Here are some reasons to choose us:</p>
+            <ul>
+                <li>Expertly curated eco-friendly itineraries</li>
+                <li>Local guides with extensive knowledge of the area</li>
+                <li>Small group sizes for personalized experiences</li>
+                <li>Support for local communities and conservation efforts</li>
+                <li>Flexible booking options and excellent customer service</li>
+            </ul> </div>
+    </section>
+</div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ExploreEcoTourism. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
